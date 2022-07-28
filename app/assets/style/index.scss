@@ -6,208 +6,215 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-
+img{
+    max-width: 100%;
+    height: auto;
+}
 $bgColor : #415165;
 $subTitleColor : #A00404;
 $unitLength : 8px;
 $unitLineWidth: 1px ;
 $alphaBetSize : 8px;
 $constant: 0px;
-$logo: url("../assets/Group6.png");
-$logo2: url("../assets/Group7.png");
 
-// 字體大小
-.mainFont{
-    font-size: $alphaBetSize * 10;
-    line-height: 95px;
-    margin-top: $unitLength * 5;
-    margin-bottom: $unitLength * 3;
+.div-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px 24px;
+
 }
-.subFont{
-    font-size:  $alphaBetSize * 4;
-    line-height: $unitLength * 6;
-    font-weight: bold;
-    display: inline-block;
+.area-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.engSubFont{
-    color: $subTitleColor;
-    font-size:  $alphaBetSize * 3;
-    line-height: $unitLength * 4.5;
-    font-weight: bold;
+// font position
+.font-center{
+    text-align: center;
+}
+.font-postion-left{
+    text-align: left;
+    margin-left: 24px;
 }
 // 容器
-.container{
-    margin: 0 auto;
+.bgContainer{
     width: 1200px;
+    padding-left: 448px;
+    padding-right: 448px;
+    margin: 0 auto;
 }
-// 個人照
-.photo{
-    border-top: 2px solid #000;
-    img{
-        width: 324px;
-        height: 324px;
-        vertical-align: middle;
-        margin: $unitLength*6 $constant;
-    }
+.Container{
+    width: 1200px;
+    margin: 0 auto;
 }
-// title margin & title 底線
-.titleMargin{
-    margin-bottom: $unitLength;
+// font style 
+.italic{
+    font-style: italic;
 }
-.contentBorder{
+// font-size
+.h1{
+    font-size: $alphaBetSize*10;
+    font-style: italic;
+    line-height: 106px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+.h2{
+    font-size: $alphaBetSize*8;
+    font-style: italic;
+    line-height: 84px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+.p-3{
+    font-size: $alphaBetSize *3;
+    line-height: 42px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+.p-2{
+    font-size: $alphaBetSize *3;
+    line-height: $alphaBetSize * 4.5;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Roboto;
+
+}
+.info{
+    padding-left: 440px;
+    padding-right: 440px;
+    font-size: 20px;
+    line-height: 42px;
+    font-weight: normal;
+    font-family: Roboto;
+}
+// space between component
+.ml{
+    margin-left: 10px;
+}
+.mr{
+    margin-right: 6px;
+}
+.mt4{
+    margin-top: 4px;
+}
+.mt8{
+    margin-top: $unitLength;
+}
+.mt12{
+    margin-top: $unitLength*1.5;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mt28{
+    margin-top: 28px;
+}
+.mt68{
+    margin-top: 68px;
+}
+.mt144{
+    margin-top: 144px;
+}
+.mt-2{
+    margin-top: $unitLength*2;
+}
+.mt-5{
+    margin-top: $unitLength*5;
+}
+.mt-6{
+    margin-top: $unitLength*6;
+}
+.mt-7{
+    margin-top: $unitLength*7;
+}
+.ml-0{
+    margin-left: $unitLength;
+}
+.ml-3{
+    margin-left: $unitLength*3;
+}
+.mb-3{
+    margin-bottom: $unitLength*3;
+}
+.mb-4{
+    margin-bottom: $unitLength*4;
+}
+.mb-5{
+    margin-bottom: $unitLength*5;
+}
+.mb-7{
+    margin-bottom: $unitLength*7;
+}
+
+.hr-line{
     border-top: 1px solid #000;
 }
-// profile 區塊
-.profile{
-    margin-bottom: $unitLength * 8;
-    span{
-        color: $subTitleColor;
-        font-size:  $alphaBetSize * 3;
-        line-height: $unitLength * 4.5;
+
+.list-style{
+    ul li::before {
+        content: "\2022";
+        color: #891818;
         font-weight: bold;
-    }
-    #name{
-        margin-top: $unitLength * 2;
-        margin-bottom: $unitLength * 3;
-    }
-    li{
-        line-height: $unitLength * 4.5;
-        font-size: $alphaBetSize * 3;   
-    } 
-}
-// 學歷
-.education{
-    margin-bottom: $unitLength * 8;
-    span{
-        color: $subTitleColor;
-        font-size: $alphaBetSize * 3;
-        line-height: $unitLength * 4.5;
-        font-weight: bold;
-    }
-    li{
-        margin-top: $unitLength * 2;
-        line-height: $unitLength * 4.5;
-        font-size: $alphaBetSize * 3;
+        display: inline-block; 
+        width: 22px;
+        margin-left: $unitLength*2;
     }
 }
-// skill
-// Note : 被container填滿所以margin 無法填充距離 => 使用padding
-.skill{
-    background-color: $bgColor;
-    color: white;
+.text-left{
     text-align: left;
-    margin-bottom: $unitLength * 8;
-    .contentBorder{
-        border-top: 1px solid #fff;
-    }
-    .subTitle{
-        padding-top: $unitLength * 3;
-        padding-bottom: $unitLength * 1;
-        line-height: $unitLength * 6 ; 
-        font-size: $alphaBetSize * 4;
-        padding-left: 522px;
-    }
-    span{
-        font-size: $alphaBetSize * 3;
-        line-height: $unitLength * 4.5;
+}
+
+// area of web
+
+.banner{
+    background-image: url('../images/photo-1552393700-42696fb89bfa@2x.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 302px;
+    padding-bottom: 302px;
+    color: #fff;
+}
+
+.brandInfo{
+
+    background-size: cover;
+    background-color: #000;
+    color: #fff;
+    padding-top: $unitLength*7;
+    padding-bottom: $unitLength*20;
+
+}
+.artWork{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    h3{
+        margin-top: $unitLength*2;
         font-weight: bold;
-    }
-    .itemSet{
-        padding-top: $unitLength * 5;
-        padding-bottom: $unitLength * 5;
-        padding-left: 492px;
-    }
-    ul{
-        border-left: 1px solid #96A9C4;
-    }
-    li{
-        line-height: $unitLength * 4.5;
-        font-size: $alphaBetSize * 3;
-        margin-left: $unitLength * 3;
-    }
-    .li-m0{
-        margin-top: $unitLength;
+        font-family: Roboto;
     }
 }
 
-.workExp{
-    margin-bottom: $unitLength * 10;
-    span{
-        color: $subTitleColor;
-        font-size: $alphaBetSize * 3;
-        line-height: $unitLength * 4.5;
-        font-weight: bold;
-    }
-    .itemSet{
-        margin-left: 24px;
-        margin-top: $unitLength * 2;
-    }
-    ul{
-        border-left: 1px solid #96A9C4;
-    }
-    li{
-        margin-left: $unitLength * 3;
-        line-height: $unitLength * 4.5;
-        font-size: $alphaBetSize * 3;
-        font-weight: bold;
-    }
-    .li-m3{
-        margin-top: $unitLength * 3;
-    }
-    .logo{
-        background: $logo;
-        width: 100px;
-        height: 100px;
-        margin-left: $unitLength * 3;
+.footer{
+    margin-top: 144px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-color: #000;
+    color: #fff;
+    padding-top: 77px;
+    padding-bottom: 77px;
 
-    }
-    .logo2{
-        background: $logo2;
-        width: 100px;
-        height: 100px;
-        margin-left: $unitLength * 3;
+}
 
-    }
-    .info{
-        margin-left: $unitLength * 3;
-        width: 642px;
-        font-size: 20px;
-        line-height: 30px;
-    }
-}
-.contact{
-    background-color: $bgColor;
-    color: white;
-    text-align: center;
-    .subTitle{
-        padding-top: $unitLength * 3;
-        padding-bottom: $unitLength * 1;
-        line-height: $unitLength * 6 ; 
-        font-size: $alphaBetSize * 4;
-    }
-    span{
-        font-size: $alphaBetSize * 3;
-        line-height: $unitLength * 4.5;
-        font-weight: bold;
-    }
-    ul{
-        padding-bottom: $unitLength * 5;
-        padding-top: $unitLength * 3;
-    }
-    li{
-        line-height: $unitLength * 4.5;
-        font-size: $alphaBetSize * 3;
-        margin-left: $unitLength * 3;
-    }
-    .li-m2{
-        margin-top: $unitLength * 2;
-    }
-    img{
-        vertical-align: middle;
-        height: 48px;
-        width: 48px;
-    }
-    .img-m3{
-        margin-left: $unitLength * 3;
-    }
-}
+// 下次可以使用first-child => 減少mb-XX 數量
+// 太多mixin & include 反而難管理
+// bg-size : cover 可以填滿整個可視窗口
+// 用div 來替代圖片可以 => 但是在對齊的時候對準點不同 => img 就是正的 => 可能需要修改
+// container 水平置中 + 上下padding 也可以有垂直置中的效果
+// ?background 寬度寫死 在拉縮畫面超過100%的時候 會跑版 width: 1920px;margin: 0 auto;
