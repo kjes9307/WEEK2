@@ -50,7 +50,8 @@ body {
 
 img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  vertical-align: middle; }
 
 .div-flex {
   display: -webkit-box;
@@ -85,13 +86,7 @@ img {
   text-align: left;
   margin-left: 24px; }
 
-.bgContainer {
-  width: 1200px;
-  padding-left: 448px;
-  padding-right: 448px;
-  margin: 0 auto; }
-
-.Container {
+.container {
   width: 1200px;
   margin: 0 auto; }
 
@@ -160,6 +155,9 @@ img {
 .mt144 {
   margin-top: 144px; }
 
+.mb32 {
+  margin-bottom: 32px; }
+
 .mt-2 {
   margin-top: 16px; }
 
@@ -211,7 +209,16 @@ img {
   background-size: cover;
   padding-top: 302px;
   padding-bottom: 302px;
-  color: #fff; }
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .brandInfo {
   background-size: cover;
@@ -220,22 +227,31 @@ img {
   padding-top: 56px;
   padding-bottom: 160px; }
 
-.artWork {
+.workInfo {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  font-family: Roboto; }
+
+.artWork h4 {
+  margin-top: 16px;
+  font-weight: bold;
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 28px; }
+
+.artWork ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .artWork h3 {
-    margin-top: 16px;
-    font-weight: bold;
-    font-family: Roboto; }
+          justify-content: space-between; }
 
 .footer {
   margin-top: 144px;
