@@ -9,6 +9,7 @@ body {
 img{
     max-width: 100%;
     height: auto;
+    vertical-align: middle;
 }
 $bgColor : #415165;
 $subTitleColor : #A00404;
@@ -39,13 +40,7 @@ $constant: 0px;
     margin-left: 24px;
 }
 // 容器
-.bgContainer{
-    width: 1200px;
-    padding-left: 448px;
-    padding-right: 448px;
-    margin: 0 auto;
-}
-.Container{
+.container{
     width: 1200px;
     margin: 0 auto;
 }
@@ -118,6 +113,9 @@ $constant: 0px;
 .mt144{
     margin-top: 144px;
 }
+.mb32{
+    margin-bottom: $unitLength*4;
+}
 .mt-2{
     margin-top: $unitLength*2;
 }
@@ -177,6 +175,10 @@ $constant: 0px;
     padding-top: 302px;
     padding-bottom: 302px;
     color: #fff;
+    display: flex;
+    // flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .brandInfo{
@@ -188,16 +190,27 @@ $constant: 0px;
     padding-bottom: $unitLength*20;
 
 }
+.workInfo{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    font-family: Roboto;
+}
 .artWork{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    h3{
+    h4{
         margin-top: $unitLength*2;
         font-weight: bold;
         font-family: Roboto;
+        font-size: 20px;
+        line-height: 28px;
     }
+    ul{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
 }
 
 .footer{
