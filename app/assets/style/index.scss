@@ -42,7 +42,7 @@ $constant: 0px;
 // 容器
 .container{
     width: 1200px;
-    margin: 0 auto;
+    // margin: 0 auto;
 }
 // font style 
 .italic{
@@ -78,8 +78,7 @@ $constant: 0px;
 
 }
 .info{
-    padding-left: 440px;
-    padding-right: 440px;
+
     font-size: 20px;
     line-height: 42px;
     font-weight: normal;
@@ -180,7 +179,11 @@ $constant: 0px;
 	justify-content: center;
 	align-items: center;
 }
-
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .brandInfo{
 
     background-size: cover;
@@ -188,7 +191,10 @@ $constant: 0px;
     color: #fff;
     padding-top: $unitLength*7;
     padding-bottom: $unitLength*20;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
 }
 .workInfo{
     font-size: 20px;
@@ -196,22 +202,29 @@ $constant: 0px;
     font-weight: bold;
     font-family: Roboto;
 }
-.artWork{
-    h4{
-        margin-top: $unitLength*2;
-        font-weight: bold;
-        font-family: Roboto;
-        font-size: 20px;
-        line-height: 28px;
-    }
-    ul{
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+.brandWork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
+    .artWork{
+        h4{
+            margin-top: $unitLength*2;
+            font-weight: bold;
+            font-family: Roboto;
+            font-size: 20px;
+            line-height: 28px;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+    }
 }
+
 
 .footer{
     margin-top: 144px;

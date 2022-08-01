@@ -102,7 +102,6 @@ img {
 
 .container {
   width: 1200px;
-  margin: 0 auto;
 }
 
 .italic {
@@ -141,8 +140,6 @@ img {
 }
 
 .info {
-  padding-left: 440px;
-  padding-right: 440px;
   font-size: 20px;
   line-height: 42px;
   font-weight: normal;
@@ -265,12 +262,35 @@ img {
           align-items: center;
 }
 
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .brandInfo {
   background-size: cover;
   background-color: #000;
   color: #fff;
   padding-top: 56px;
   padding-bottom: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .workInfo {
@@ -280,7 +300,20 @@ img {
   font-family: Roboto;
 }
 
-.artWork h4 {
+.brandWork {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brandWork .artWork h4 {
   margin-top: 16px;
   font-weight: bold;
   font-family: Roboto;
@@ -288,7 +321,7 @@ img {
   line-height: 28px;
 }
 
-.artWork ul {
+.brandWork .artWork ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
