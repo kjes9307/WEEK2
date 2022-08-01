@@ -87,8 +87,7 @@ img {
   margin-left: 24px; }
 
 .container {
-  width: 1200px;
-  margin: 0 auto; }
+  width: 1200px; }
 
 .italic {
   font-style: italic; }
@@ -121,8 +120,6 @@ img {
   font-family: Roboto; }
 
 .info {
-  padding-left: 440px;
-  padding-right: 440px;
   font-size: 20px;
   line-height: 42px;
   font-weight: normal;
@@ -220,12 +217,34 @@ img {
       -ms-flex-align: center;
           align-items: center; }
 
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .brandInfo {
   background-size: cover;
   background-color: #000;
   color: #fff;
   padding-top: 56px;
-  padding-bottom: 160px; }
+  padding-bottom: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .workInfo {
   font-size: 20px;
@@ -233,25 +252,35 @@ img {
   font-weight: bold;
   font-family: Roboto; }
 
-.artWork h4 {
-  margin-top: 16px;
-  font-weight: bold;
-  font-family: Roboto;
-  font-size: 20px;
-  line-height: 28px; }
-
-.artWork ul {
+.brandWork {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+          align-items: center; }
+  .brandWork .artWork h4 {
+    margin-top: 16px;
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 28px; }
+  .brandWork .artWork ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 .footer {
   margin-top: 144px;
