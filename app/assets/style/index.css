@@ -230,13 +230,22 @@ img {
   border-top: 1px solid #000;
 }
 
-.list-style ul li::before {
-  content: "\2022";
-  color: #891818;
-  font-weight: bold;
-  display: inline-block;
+.dot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dot::before {
+  content: '';
+  background-color: #891818;
+  border-radius: 50%;
   width: 22px;
-  margin-left: 16px;
+  height: 22px;
+  margin-right: 16px;
 }
 
 .text-left {

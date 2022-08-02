@@ -150,14 +150,16 @@ $constant: 0px;
     border-top: 1px solid #000;
 }
 
-.list-style{
-    ul li::before {
-        content: "\2022";
-        color: #891818;
-        font-weight: bold;
-        display: inline-block; 
+.dot{
+    display: flex;
+    align-items: center;
+    &::before{
+        content: '';
+        background-color: #891818;
+        border-radius: 50%;
         width: 22px;
-        margin-left: $unitLength*2;
+        height: 22px;
+        margin-right: $unitLength*2;
     }
 }
 .text-left{
